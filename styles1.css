@@ -1,0 +1,184 @@
+/* Global Settings */
+body {
+    margin: 0;
+    padding: 0;
+    background: #001B2E;
+    background-size: 300% 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-left, .logo-right {
+    width: 125px;
+    height: auto;
+}
+
+/* Heading Styling */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 5px 0 0;
+    font-size: xx-large;
+    flex-grow: 1;
+}
+
+/* Registration Container */
+.registration-container {
+    background: #002037;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+/* Label and Inputs */
+label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #02385D;
+    background-color: #002037;
+    color: #ffffff;
+}
+
+input::placeholder, select::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+/* Button Styling */
+button {
+    background-color: #02385D;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Image Section */
+.image-group {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002037;
+    border-radius: 8px;
+}
+
+.link-image {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.link-image:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
+        align-items: center;
+    }
+
+    .logo-left, .logo-right {
+        width: 60px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 10px 0 0;
+        font-size: 20px;
+    }
+
+    .registration-container {
+        padding: 10px;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .image-group {
+        width: 100%;
+        margin-top: 5px;
+        justify-content: center;
+    }
+
+    .link-image {
+        width: 125px;
+    }
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
